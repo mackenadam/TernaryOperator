@@ -22,8 +22,11 @@ namespace TernaryOperator
 
             // As a ternary
             stateOfWater = temperature < 0 ? "solid" : "liquid";
+            Console.WriteLine("State of water at {0} degrees celcius is {1}", temperature, stateOfWater);
 
-            Console.WriteLine("State of water at {0} is {1}", temperature, stateOfWater);
+            temperature += 30;
+            stateOfWater = temperature < 0 ? "solid" : "liquid";
+            Console.WriteLine("State of water at {0} degrees celcius is {1}", temperature, stateOfWater);
         }
     }
 }
